@@ -1,30 +1,31 @@
+package br.edu.utfpr.modelo;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.edu.utfpr.modelo;
+
 
 /**
  *
- * @author UTFPR
+ * @author Gabriel
  */
 public class Pessoa {
     
     private String nome;
     private String sobrenome;
-    private int idade;
-    private int codigo;
-            
+    private String endereco;
+    private int cod;
     
-    public Pessoa(String nome, String sobrenome, int idade,int codigo){
+    public Pessoa(String nome,String sobrenome,String endereco,int cod){
         this.nome = nome;
         this.sobrenome = sobrenome;
-        this.idade = idade;
-        this.codigo = codigo;
+        this.endereco = endereco;
+        this.cod = cod;
     }
-    
-    public String getNome(){
+
+    public String getNome() {
         return nome;
     }
 
@@ -32,16 +33,14 @@ public class Pessoa {
         return sobrenome;
     }
 
-    public int getIdade() {
-        return idade;
+    public String getEndereco() {
+        return endereco;
     }
 
-    public int getCodigo() {
-        return codigo;
+    public int getCod() {
+        return cod;
     }
 
- 
-    
     
     
 }
